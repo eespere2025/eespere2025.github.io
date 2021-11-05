@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>NoF</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<style>  
+* {
+box-sizing: border-box;
+}
+
+table{
+font-family:"Roboto";
+margin-left: auto;
+margin-right: auto;
+text-align: center; 
+color: black;
+height: 85%;
+width: 85%;
+  }
+
+body {
+font-family: 'Roboto', sans-serif;margin: 0;
+}
+img {
+float: left;
+padding: 20px;
+}
+.center {
+margin-left: auto;
+margin-right: auto;
+}
+
+.header {
+padding: 50px;
+text-align: center;
+background-image:url(https://static.wikia.nocookie.net/gensin-impact/images/5/55/Viewpoint_Knights_of_Favonius_-_Library.png/revision/latest?cb=20210415172924);
+background-size: 105%;
+background-repeat:no-repeat;
+background-position:center;
+background-attachment:scroll;
+color: 	#FFFFFF;
+
+}
+.header h1 {
+font-size: 70px;
+text-align: right;
+}
+.header h2 {
+font-size: 55px;
+text-align: left;
+padding: 10%;
+}
+.navbar {
+overflow: hidden;
+background-color: #CE2F65;
+}
+
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 10px 20px;
+font-size: 12px;
+text-decoration: none;
+}
+
+.navbar span.right {
+float: right;
+display: block;
+color: #FFFFFF;
+text-align: center;
+padding: 10px 20px;
+font-size: 10px;
+}
+.navbar a:hover {
+background-color: #EACCB2;/* change this to something else */
+color: black;
+}
+.script {
+overflow: hidden;
+float: right;
+float: left;
+display: block;
+color: #FFFFFF;
+text-align: center;
+padding: 10px 20px;
+text-decoration: none;
+} 
+
+.row {  
+display: -ms-flexbox; 
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+}
+.vertical {
+border-left: 1px white;
+height: 1090px;
+}
+.vertical {
+border-right: 1px white;
+height: 1090px;
+}
+
+.side {
+-ms-flex: 15%; 
+flex: 15%;
+background-color: #DAD3E5;
+padding: 10px;
+}
+.main {   
+-ms-flex: 85%; 
+flex: 85%;
+background-color: #D5CDE2;
+padding: 20px;
+}
+
+.news{
+margin: 10px;
+position: relative;
+text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>News of Favonius</h1>
+  <p style="text-align: right;">A website about weather by Elijah Espere from 9-samat</p>
+</div>
+
+<div class="navbar">
+  <a href="LE3_Samat_Espere.html">Home</a>
+  <a href="Content1.html">November Banner</a>
+  <a href="Content2.html">Hutao Builds</a>
+  <a href="Content3.html">Noelle</a>
+  <span class="right">
+    <script>
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth());
+        var yyyy = today.getFullYear();
+        today = mm + '/' + dd + "/" + yyyy;
+        document.write(today);
+    </script>
+</span>
+</div>
+
+
+<div class="row">
+  <div class="main">
+    <div class="vertical"> 
+	   <table>
+	    <tr>
+		 <td colspan="2">
+		 <h1>Authorpage</h1>
+		 <p>This website was made by Espere, Elijah Miguel C. for the sole purpose of doing a mini Genshin impact wiki about the new banner and building the character from the new banner along with a page dedicated to a character called Noelle who is probably my favorite character in the whole game<br>
+			All pages were written by me with some research but mostly built from my own knowledge of the game.<br>
+			Setting up this website was a pain especially colours not being accurate and images not loading, I was broken for a while trying to troubleshoot this and eventually managed to get most things to work.
+			
+		 </p>
+		  <a>Read More</a>
+		<tr>
+		  <td>
+		    <a href="LE3_Samat_Espere.html">homepage</a>
+		  </td>
+		  <td>
+		   <a href="Content3.html">Authorpage</a>
+		  </td>
+		</tr>
+	   </table>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
